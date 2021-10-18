@@ -1,8 +1,11 @@
-<?php include '../connection.php';session_start();
+<!DOCTYPE html>
+<?php include '../connection.php';
+session_start();
 if(!isset($_SESSION['aid']))
 	echo "<script>
-window.location='../admin.php'</script>";?>
-<!DOCTYPE html>
+window.location='../admin.php'</script>";
+
+ ?>
 <html>
 <head>
 	<title></title>
@@ -10,13 +13,13 @@ window.location='../admin.php'</script>";?>
 <link href="../icofont/icofont.css" rel="stylesheet"/>
 
 	<style type="text/css">
-		body{font-size: 12px; font-family: verdana;}
+		body{font-size: 12px;font-family: verdana;}
 	</style>
 </head>
 <body>
 	<div class="row bg-info">
 		<div class="col-2"></div>
-		<div class="col-8 text-dark  "><h3 style="text-shadow: 2px 2px 2px white;">Courier Admin</h3>
+		<div class="col-8 text-dark "><h3  style="text-shadow: 2px 2px 2px white;">Courier Admin</h3>
         
 		</div>
 		<div class="col-2"></div>
@@ -37,10 +40,10 @@ window.location='../admin.php'</script>";?>
 		<div class="col-2"></div>
 
 	</div>
-	<div class="row p-4" style="background-color: #002b80;">
-		<div class="col-4"></div>
-		<div class="col-4"></div>
-		<div class="col-4"></div>
+	<div class="row p-3" style="background-color:  #002b80;">
+		<div class="col-2"></div>
+		<div class="col-4 "><a href="service.php" class="p-3 text-decoration-none text-light">Service List</a><a href="partner.php" class="p-3 text-decoration-none text-light">Future Partner</a><a href="testimonial.php" class="text-decoration-none text-light">Testimonial</a></div>
+		<div class="col-6"></div>
 
 	</div>
 	

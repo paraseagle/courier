@@ -1,72 +1,52 @@
-<?php include 'connection.php';?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<link href="css/bootstrap.css" rel="stylesheet"/>
-<link href="icofont/icofont.css" rel="stylesheet"/>
-</head>
-<body>
-<?php $sql="select * from admin order by aid desc";
-  $result=$conn->query($sql);
-    $row=$result->fetch_assoc();
-    
-?>
-	<div class="row bg-dark text-light text-center">
-		<div class="col-3"></div>
-		<div class="col-6 mt-5 mb-5"><h2 class="text-light  text-center">You Can Contact Us</h2>
-          <p><?php echo $row['coname'];?><br>
-          <?php echo $row['addr'];?><br>
-          <?php echo $row['ph'];?></p>
-          <p><a href="mailto:<?php echo $row['mail'];  ?>" class="text-decoration-none text-light" ><?php echo $row['mail'];?></a></p>
-           <p class="mt">
-            <a href="https://www.facebook.com/<?php echo $row['fb']; ?>" target="_blank" class="text-decoration-none text-light"  ><i class="icofont-facebook icofont-3x"></i></a>
-            <a href="https://www.twitter.com/<?php echo $row['twitter']; ?>" target="_blank" class="text-decoration-none text-light"><i class="icofont-twitter icofont-3x"></i></a>
-            <a href="https://plus.google.com/<?php echo $row['gpluse']; ?>" target="_blank" class="text-decoration-none text-light"><i class="icofont-google-plus icofont-3x"></i></a>
-          </p>
-           <h6 class="mt">COPYRIGHT &copy; <?php echo date("Y"); ?> - Powered By <a href="index.php" target="_blank" class="text-decoration-none text-light"><?php echo $row['coname'] ?></a></h6>
-          
+<style>
+.footer {
 
-		</div>
-		<div class="col-3"></div>
+  left: 0;
+  bottom: 0;
+  width: 100%;
 
-	</div>
+  color: white;
+ 
+  height: 50px;
+    background: #434343;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #111), color-stop(0.1, #434343), color-stop(10, #191919));
+    background: -moz-linear-gradient(top,  #111 0%,  #434343 10%, #191919 100%);
+    -pie-background: linear-gradient(top,  #111 0%,  #434343 10%, #191919 100%);
+    color: #ddd;
+    font-size: 10px;
+ 
+}
+.para{
+  line-height: 50px;
+}
+</style>
 
-</body>
-</html>
-
+<div class="clear">&nbsp;</div>
+<div class="clear">&nbsp;</div>
+<div class="clear">&nbsp;</div>
+<div class="clear">&nbsp;</div>
+<div class="clear">&nbsp;</div>
+<div class="clear">&nbsp;</div>
+<div class="clear">&nbsp;</div>
+<div class="clear">&nbsp;</div>
+<div class="clear">&nbsp;</div>
+<div class="clear">&nbsp;</div>
+<div class="clear">&nbsp;</div>
+<div class="clear">&nbsp;</div>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<footer id="page-footer" class="footer mt-3">
+  <div id="footer-inner">
+    <p class="wrapper  text-center para"> | &copy; 2011. All rights reserved. Theme design by<a href="http://www.eagletechnosys.com" target="_blank"> Eagle Technosys</a></p>
+  </div>
+</footer>
 
 
 
 <script  src="js/jquery.js"></script>
-
-	<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body></html>
 
